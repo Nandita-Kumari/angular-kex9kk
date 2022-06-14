@@ -1,0 +1,37 @@
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color:rgb(211, 211, 224);
+
+}
+mat-sidenav{
+  background-color: brown;
+  width:200px;
+}
+#click{
+  color:rgb(218, 219, 221);
+  background-color: rgb(238, 45, 31);
+  border:2px solid rgb(219, 60, 60);
+  width:100px;
+  height: 30px;
+  font-size: 20px;
+  margin-left:20px;
+  margin-top:20px;
+}
+#list{
+  /* border: 2px solid rgb(218, 210, 210); */
+  width:199px;
+  margin-bottom:20px;
+  text-decoration: none;
+  color:aliceblue;
+  height:50px;
+  
+ 
+}
+a:hover{
+  background-color: rgb(77, 10, 10);
+ 
+}

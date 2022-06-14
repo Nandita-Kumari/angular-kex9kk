@@ -1,0 +1,22 @@
+<mat-sidenav-container class="example-container" >
+<mat-sidenav #sidenav mode="side">
+  <mat-action-list>
+    <nav>
+    <a id="list"  routerLink="/list-view1" routerLinkActive="active" mat-list-item (click)="open()"> ListView1 </a>
+    <a id="list" routerLink="/list-view2" routerLinkActive="active" mat-list-item (click)="open()"> ListView2 </a>
+    </nav>
+  </mat-action-list>
+</mat-sidenav>
+<mat-sidenav-content>
+  <button id="click" mat-button (click)="sidenav.toggle()" > click</button> 
+   
+</mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- <nav>
+<a routerLink="/list-view1" routerLinkActive="active">list-view1</a>
+<br>
+<a routerLink="/list-view2" routerLinkActive="active">list-view2</a>
+</nav> -->
+
+<router-outlet></router-outlet>
