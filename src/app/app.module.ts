@@ -12,9 +12,16 @@ import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import {AppRoutingModule, routingComponents} from './app-routing.module';
 import { CarService } from './car.service';
+import { DataSource } from '@angular/cdk/collections';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, MatSidenavModule, BrowserAnimationsModule, MatListModule, MatIconModule,AppRoutingModule ],
+  imports:      [ BrowserModule, FormsModule, MatSidenavModule, BrowserAnimationsModule, MatListModule, MatIconModule,AppRoutingModule, MatTableModule, MatPaginatorModule, MatFormFieldModule, MatInputModule],
+
   declarations: [ AppComponent, routingComponents  ],
   bootstrap:    [ AppComponent ],
   providers: [CarService],

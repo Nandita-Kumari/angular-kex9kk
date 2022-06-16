@@ -9,8 +9,9 @@
 </mat-sidenav>
 <mat-sidenav-content>
   <button id="click" mat-button (click)="sidenav.toggle()" > click</button> 
-   
+  <router-outlet></router-outlet>
 </mat-sidenav-content>
+
 </mat-sidenav-container>
 
 <!-- <nav>
@@ -19,4 +20,3 @@
 <a routerLink="/list-view2" routerLinkActive="active">list-view2</a>
 </nav> -->
 
-<router-outlet></router-outlet>

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { faker } from '@faker-js/faker';
 
-interface Car {
+export interface Car {
   name: string;
   model: string;
   yearOfRelease: number;
