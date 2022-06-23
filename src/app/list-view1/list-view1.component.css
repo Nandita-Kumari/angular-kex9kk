@@ -1,6 +1,6 @@
 .main{
   margin:10px;
-  margin-left:100px;
+  margin-left:110px;
 }
 
 table {
@@ -94,4 +94,15 @@ table {
   padding: 30px;
 } */
 
+.icon{
+  font-size: 70px;
+  position: relative;
+  top:60px;
+  /* left:403px; */
+  right:40px;
+  color: rgb(105, 102, 102);
 
+
+
+
+}

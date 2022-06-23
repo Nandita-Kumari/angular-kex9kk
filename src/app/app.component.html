@@ -2,8 +2,8 @@
 <mat-sidenav #sidenav mode="side">
   <mat-action-list>
     <nav>
-    <a id="list"  routerLink="/list-view1" routerLinkActive="active" mat-list-item (click)="open()"> ListView1 </a>
-    <a id="list" routerLink="/list-view2" routerLinkActive="active" mat-list-item (click)="open()"> ListView2 </a>
+    <a id="list" [routerLink]="['/','list-view1']" routerLinkActive="active" mat-list-item (click)="open()"> ListView1 </a>
+    <a id="list" [routerLink]="['list-view2']" routerLinkActive="active" mat-list-item (click)="open()"> ListView2 </a>
     </nav>
   </mat-action-list>
 </mat-sidenav>

@@ -1,0 +1,64 @@
+
+<div class="main">
+
+
+<cdk-virtual-scroll-viewport [tvsItemSize]="30" [footerEnabled]="true" [headerEnabled]="true"
+                             class="wrapper mat-elevation-z2">
+<table mat-table multiTemplateDataRows [dataSource]="dataSource" class="mat-elevation-z8">
+
+<!--- Note that these columns can be defined in any order.
+      The actual rendered columns are set as a property on the row definition" -->
+
+<!-- Position Column -->
+<ng-container  matColumnDef="name">
+  <th mat-header-cell *matHeaderCellDef> Name </th>
+  <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+</ng-container>
+
+<!-- Name Column -->
+<ng-container matColumnDef="model">
+  <th mat-header-cell *matHeaderCellDef> Model </th>
+  <td mat-cell *matCellDef="let element"> {{element.model}} </td>
+</ng-container>
+
+<!-- Weight Column -->
+<ng-container matColumnDef="yearOfRelease">
+  <th mat-header-cell *matHeaderCellDef> YearOfRelease </th>
+  <td mat-cell *matCellDef="let element"> {{element.yearOfRelease}} </td>
+</ng-container>
+
+<!-- Symbol Column -->
+<ng-container matColumnDef="color">
+  <th mat-header-cell *matHeaderCellDef> Color </th>
+  <td mat-cell *matCellDef="let element"> {{element.color}} </td>
+</ng-container>
+
+<ng-container matColumnDef="brand">
+<th mat-header-cell *matHeaderCellDef> Brand </th>
+<td mat-cell *matCellDef="let element"> {{element.brand}} </td>
+</ng-container>
+
+<ng-container matColumnDef="progressBar">
+
+<td mat-cell *matCellDef="let element"> <mat-progress-bar mode="indeterminate"></mat-progress-bar> </td>
+</ng-container>
+
+<tr mat-header-row *matHeaderRowDef="displayedColumns, sticky: true"></tr>
+<tr mat-row style="height: 30px;" *matRowDef="let row;  columns: displayedColumns;"></tr>
+<tr mat-row style="height: 30px;" *matRowDef="let row; let i=dataIndex; columns: displayedColumns; when: isLastRow(this)"></tr>
+
+
+
+
+
+
+</table>
+</cdk-virtual-scroll-viewport>
+
+
+</div>
+
+         
+
+
+

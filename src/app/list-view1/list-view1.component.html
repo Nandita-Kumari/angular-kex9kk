@@ -1,5 +1,11 @@
 
 <div class="main">
+
+<nav>
+<a  [routerLink]="['/','detail-view']" routerLinkActive="active" mat-list-item (click)="open()"> <mat-icon class="icon">note_add</mat-icon></a>
+
+</nav>
+
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
 <!--- Note that these columns can be defined in any order.

@@ -1,0 +1,52 @@
+
+<div class="border">
+<h3>Detail-View Of Car</h3>
+<div class="main">
+<form fxLayout="column" fxLayoutAlign="space-between" [formGroup]="detailForm"  (ngSubmit)="onSubmit()">
+<mat-form-field  class="name" appearance="fill">
+<mat-label>Name </mat-label>
+<input  formControlName="name" matInput>
+<mat-error *ngIf="checkError('name', 'required')">Name is required</mat-error>
+<mat-error *ngIf="checkError('name', 'maxlength')"> Name should be less than 20 characters</mat-error>
+<mat-error *ngIf="checkError('name', 'Name')"> Name must be unique</mat-error>
+
+</mat-form-field>
+
+<mat-form-field class="brand" appearance="fill">
+<mat-label>Brand</mat-label>
+<input  formControlName="brand" matInput>
+<mat-error *ngIf="checkError('brand', 'required')">Brand Name is required</mat-error>
+<mat-error *ngIf="checkError('brand', 'maxlength')"> Brand name should be less than 20 characters</mat-error>
+</mat-form-field>
+<mat-form-field  class="yearOfRelease" appearance="fill">
+<mat-label>YearOfRelease</mat-label>
+<input formControlName="yearOfRelease" matInput>
+<mat-error *ngIf="checkError('yearOfRelease', 'required')">YearOfRelease is required</mat-error>
+<mat-error *ngIf="checkError('yearOfRelease', 'minlength')">YearOfRelease should be more than 2000 </mat-error>
+
+<mat-error *ngIf="checkError('yearOfRelease', 'Year')">YearOfRelease should be greater than 2000</mat-error>
+
+</mat-form-field>
+
+<mat-form-field class="color" appearance="fill">
+<mat-label>Color</mat-label>
+<input formControlName="color" matInput>
+<mat-error *ngIf="checkError('color', 'required')">Color Name is required</mat-error>
+</mat-form-field>
+<mat-form-field class="model" appearance="fill">
+<mat-label>Model</mat-label>
+<input formControlName="model" matInput>
+<mat-error *ngIf="checkError('model', 'required')">Model Name is required</mat-error>
+<mat-error *ngIf="checkError('brand', 'maxlength')"> Brand name should be less than 20 characters</mat-error>
+</mat-form-field>
+<br>
+<br>
+<mat-card-actions>
+<button mat-raised-button type="submit" color="primary">Update & Submit</button>
+</mat-card-actions>
+</form>
+
+</div>
+</div>
+
+

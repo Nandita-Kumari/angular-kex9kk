@@ -26,7 +26,7 @@ export class CarService {
       name: faker.name.findName(),
       model: faker.git.branch(),
       yearOfRelease: faker.datatype.number({
-        min: 2010,
+        min: 2000,
         max: 2020,
       }),
       brand: faker.lorem.word(),

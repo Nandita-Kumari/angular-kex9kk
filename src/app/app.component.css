@@ -20,6 +20,7 @@ mat-sidenav{
   font-size: 20px;
   margin-left:20px;
   margin-top:20px;
+  padding-bottom:35px !important;
 }
 #list{
   /* border: 2px solid rgb(218, 210, 210); */
